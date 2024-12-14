@@ -2,8 +2,10 @@ body {
   margin: 0;
   overflow-y: scroll;
   /* overflow: hidden; */
-  padding: 0;
+  padding: 0;  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Images/traveller.png5');
+  background-size: cover;
 }
+
 
 ::-webkit-scrollbar {
   width: 0;
@@ -116,7 +118,7 @@ header nav li{
     animation-iteration-count: infinite;
     animation-play-state: running;
     animation-timing-function: ease-in;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Images/Mobile-Background/pexels-alex-azabache-3214958.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Images/Mobile-Background/pexels-alex-azabache-3214958.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -72,6 +72,8 @@ input[type="file"] {
 
 .btn {
   background-color: #333;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Images/Mobile-Background/pexels-alex-azabache-3214958.jpg');
+  background-size: cover;
   border: #333;
   color: #fff;
   margin: 0;

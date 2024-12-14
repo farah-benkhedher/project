@@ -1,13 +1,15 @@
-body {
+body { 
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif; /* Global font family */
+  background-color: #1a1a1a; /* Slightly darker background */
+  color: white; /* Default text color */
 }
 
+/* Hide the scrollbar */
 ::-webkit-scrollbar {
   width: 0;
-  /* Remove scrollbar space */
   background: transparent;
-  /* Optional: just make scrollbar invisible */
 }
 
 /* Style for background video */
@@ -18,116 +20,118 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: -1; /* Ensure the video stays in the background */
 }
 
+/* Fallback background image */
 #backgroundImage {
   display: none;
 }
 
-/* Style for title of the page */
+/* Page title styling */
 .Site-Title {
   text-align: center;
-  color: white;
   font-family: "Raleway", sans-serif;
-  font-size: 60px;
-  font-weight: 500;
-  /* text-decoration: double; */
-  flex: 1;
-  padding: 30px auto;
-  padding-top: 50px;
+  font-size: 70px;
+  font-weight: 600;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  padding: 50px 0;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  z-index: 10;
 }
 
+/* Text link styling */
 .Text {
   color: white;
   text-decoration: none;
 }
 
-/* The div of login form is centered */
+/* Centered login box */
 .login-box {
-  color: white;
-  width: 340px;
+  width: 360px;
   position: absolute;
-  top: 20%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
 
 .login-box h1 {
-  float: left;
   font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
-  font-weight: 200;
-  border-bottom: 6px solid #e27802;
-  margin-bottom: 30px;
-  margin-top: 50px;
-  margin-right: 10px;
+  font-size: 32px;
+  font-weight: 600;
+  border-bottom: 4px solid #e27802;
+  margin-bottom: 25px;
   padding-bottom: 10px;
+  text-transform: uppercase;
+  color: #e27802;
 }
 
-/* Style for textboxes of the form */
+/* Textbox styling */
 .textbox {
   width: 100%;
-  overflow: hidden;
-  font-size: 20px;
-  padding: 8px 0;
-  margin: 8px 0;
-  border-bottom: 1px solid #e27802;
+  font-size: 18px;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 2px solid #e27802;
+  border-radius: 5px;
+  background-color: #2c2c2c;
+  color: white;
 }
 
 .textbox i {
-  width: 26px;
-  float: left;
-  text-align: center;
+  padding-right: 10px;
 }
 
 .textbox input {
   border: none;
   outline: none;
-  background: none;
-  color: white;
-  font-size: 18px;
-  width: 250px;
-  float: left;
-  margin: 0 10px;
+  background: transparent;
+  color: rgb(128, 20, 20);
+  width: calc(100% - 20px);
+  font-size: 16px;
 }
 
+/* Button Styling */
 .btn {
-  background: none;
-  border: 2px solid #e27802;
-  color: white;
+  background: #e27802;
+  border: none;
+  color: rgb(136, 52, 52);
   cursor: pointer;
   font-size: 18px;
-  margin: 12px 0;
-  padding: 10px;
+  padding: 12px;
   width: 100%;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
 
 .btn:hover {
-  background-color: white;
-  color: #e27802;
+  background-color: #bf6600;
 }
 
+/* Forgot password link */
 .forgot-password {
   text-align: left;
   padding: 10px 0;
-  margin: 0;
+  font-size: 14px;
 }
 
-/* Style for redirecting to signup page */
+/* Redirect to signup page */
 .Acc {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  padding-top: 10%;
   text-align: center;
-  width: 100%;
+  color: rgb(51, 58, 160);
 }
 
 .login-box a {
@@ -138,15 +142,19 @@ body {
   font-size: 18px;
   margin: 12px 0;
   padding: 10px;
+  text-decoration: underline;
+  transition: color 0.3s;
 }
 
-/********************* Responsive Styling *************************************/
+.login-box a:hover {
+  color: #bf6600;
+}
 
+/* Responsive styling */
 @media (max-width: 480px) {
 
   .login-box {
     width: 90%;
-    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
   }
 
   #backgroundVideo {
@@ -154,7 +162,7 @@ body {
   }
 
   #backgroundImage {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     object-fit: cover;
     width: 100vw;
     height: 100vh;
@@ -168,11 +176,11 @@ body {
 
   .Site-Title {
     width: 90%;
-    font-size: 35px;
+    font-size: 40px;
   }
 
   .login-box h1 {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .textbox {

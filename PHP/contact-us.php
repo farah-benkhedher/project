@@ -47,7 +47,7 @@ if (isset($_POST['sub'])) {
           </div>
           <div class="text">
             <h3>Address</h3>
-            <p>Rahjung street, Pune, India</p>
+            <p>Sahloul,Sousse</p>
           </div>
         </div>
 
@@ -67,7 +67,7 @@ if (isset($_POST['sub'])) {
           </div>
           <div class="text">
             <h3>Phone</h3>
-            <p>123-456-7890</p>
+            <p>123-456-789</p>
           </div>
         </div>
       </div>
